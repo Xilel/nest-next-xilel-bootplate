@@ -1,0 +1,34 @@
+{
+  "compilerOptions": {
+    "outDir": "../.next/production-server",
+    "declaration": true,
+    "target": "es6",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "esModuleInterop": true,
+    "isolatedModules": false,
+    "noEmit": false,
+    "allowJs": false,
+    "baseUrl": ".",
+    "paths": {
+      "@dto/*": [
+        "../dto/*"
+      ]
+    }
+  },
+  "exclude": [
+    "node_modules"
+  ],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx"
+  ],
+  "references": [
+    {
+      "path": "../dto"
+    }
+  ]
+}
