@@ -43,7 +43,7 @@
     "eslint-plugin-react": "^7.19.0",
     "eslint-plugin-react-hooks": "^3.0.0",
     "eslint-plugin-simple-import-sort": "^5.0.1",
-    "jest": "^24.9.0",
+    "jest": "^25.2.7",
     "prettier": "^2.0.2",
     "rimraf": "^3.0.0",
     "supertest": "^4.0.2",
@@ -52,5 +52,19 @@
     "ts-node": "^8.6.0",
     "tsconfig-paths": "^3.9.0",
     "typescript": "^3.7.4"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "ts"
+    ],
+    "rootDir": "server",
+    "testRegex": ".(spec|test).ts$",
+    "transform": {
+      "^.+\\.(t|j)s$": "ts-jest"
+    },
+    "coverageDirectory": "../coverage",
+    "testEnvironment": "node"
   }
 }
