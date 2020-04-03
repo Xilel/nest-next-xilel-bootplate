@@ -1,7 +1,7 @@
 {
-  "name": "nestnext8",
+  "name": "nestnext9",
   "version": "1.0.0",
-  "main": "index.js",
+  "author": "Xilel",
   "license": "MIT",
   "scripts": {
     "dev": "nodemon server/main.ts",
