@@ -1,4 +1,5 @@
 import { NestFactory } from '@nestjs/core';
+
 import { AppModule } from './application.module';
 
 async function bootstrap() {
@@ -12,4 +13,3 @@ try {
 } catch (error) {
   console.error(error);
 }
-

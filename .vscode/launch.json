@@ -28,8 +28,8 @@
       },
       "sourceMaps": true,
       "cwd": "${workspaceRoot}",
-      "protocol": "inspector"
-      //"console": "externalTerminal"
+      "protocol": "inspector",
+      "console": "integratedTerminal"
     },
     {
       "type": "firefox",

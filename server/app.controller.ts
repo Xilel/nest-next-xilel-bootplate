@@ -1,17 +1,17 @@
+import { IndexPageDTO } from '@dto/indexPage';
 import { Controller, Get, Query, Render } from '@nestjs/common';
-import { IndexPageDTO } from "@dto/indexPage"
 
 @Controller()
 export class AppController {
-  @Render('Index')
+  @Render('index')
   @Get()
   public index(@Query('name') name?: string): IndexPageDTO {
     return {
-      text: name
+      text: name,
     };
   }
 
-  @Render('About')
+  @Render('about')
   @Get('/about')
   public About() {
     return;

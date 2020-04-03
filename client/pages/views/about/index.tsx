@@ -1,6 +1,6 @@
-import React from 'react';
 // import AboutComponent from '@components/about';
 import AboutComponent from '@components/about';
+import React from 'react';
 
 type Props = {};
 
@@ -11,11 +11,8 @@ class AboutPage extends React.Component<Props, States> {
     super(props);
   }
 
-
   render(): JSX.Element {
-    return (
-      <AboutComponent />
-    )
+    return <AboutComponent />;
   }
 }
 

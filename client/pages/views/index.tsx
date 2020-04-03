@@ -1,6 +1,6 @@
-import * as React from 'react';
-import { NextPageContext } from 'next';
 import { IndexPageDTO } from '@dto/indexPage';
+import { NextPageContext } from 'next';
+import * as React from 'react';
 
 type States = {};
 
@@ -15,9 +15,7 @@ class Index extends React.Component<IndexPageDTO, States> {
 
   render(): JSX.Element {
     const text = this.props.text ?? 'world';
-    return (
-      <p>Hello, {text}!</p>
-    )
+    return <p>Hello, {text}!</p>;
   }
 }
 
